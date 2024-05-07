@@ -1,0 +1,85 @@
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search bar</title>
+    <link rel="stylesheet" href="./searchBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+    <form class="example" action="">
+        <input type="search" placeholder="Search" name="search" id="myInput" oninput="myfunction()">
+        <ul id="myUL"> 
+            <li> <a href="photoOFsalad.html">Photo of Salad</a></li>
+            <li> <a href="DESSERT.htm">Dessert</a></li>
+            <li> <a href="soups.html">Soups</a></li>
+            <li> <a href="main_dishs.html">Main Dishes</a></li>
+            <li> <a href="hot-drinks.html">Hot Drinks</a></li>
+            <li> <a href="soft-drinks.html">Soft Drinks</a></li>
+            <li> <a href="appetizers.html">Appetizers</a></li>
+        </ul>
+        <button type="submit"><i class="fa fa-search">
+            
+        </i></button>
+    </form>
+    <script>
+        function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (filter && txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+myFunction()
+        document.addEventListener("DOMContentLoaded", function() {
+    var ul = document.getElementById("myUL");
+
+    // Function to handle clicks on search results
+    ul.addEventListener("click", function(e) {
+        var target = e.target;
+        if (target.tagName === "A") {
+            document.getElementById("myInput").value = ""; // Clear input field
+            ul.style.display = "none"; // Hide search results
+        }
+    });
+
+    // Function to show search results
+    function showSearchResults() {
+        ul.style.display = "block"; // Show search results
+    }
+
+    // Call myFunction when input changes
+    var input = document.getElementById("myInput");
+    input.addEventListener("input", function() {
+        myFunction();
+        showSearchResults(); // Show search results on input change
+    });
+});
+    </script>
+
+
+</body>
+</html>
+ 
+
+        
+
+
+
+ 
+
+
+

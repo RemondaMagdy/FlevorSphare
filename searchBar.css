@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+   form.example input[type=text] {
+    padding: 0.625rem;
+    font-size: 1.063rem;
+    border: 0.063 solid green;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  #myUL{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+text-decoration-line: none;
+
+  } 
+
+
+
+/* .header .search-form{
+ position: absolute;
+ top: 115%; right: 7%;
+ background: #fff;
+ width: 50rem;
+ height: 5rem;
+ display: flex;
+ align-items:center ;
+
+}
+.header .search-form input{
+ height: 100%;
+ width: 100%;
+ font-size: 1.6rem;
+ color: black;
+ padding: 1rem;
+ text-transform: none;
+
+}  
+.header .search-form label{
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: black;
+}
+.header .search-form label:hover {
+  color: blueviolet;
+} */
+  
