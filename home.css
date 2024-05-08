@@ -50,11 +50,11 @@ padding-top: 9rem;
   font-size: 2.5rem;
 }
 .home .content .slide h3{
-  color: black;
+  color: #666;
   font-size: 1.5rem;
   padding: .5rem;
 }
-.btn{
+showmore.btn{
   margin-top: 1rem;
   display: inline-block;
   font-size: 1.7rem;
